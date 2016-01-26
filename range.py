@@ -35,3 +35,8 @@ for num in xrange(10):
     
 # in python 2, if you do not need to save the results in a list,
 # use xrange instead of range.
+
+xrange(0,6,2)
+
+x = xrange(1,6)
+type(x)
