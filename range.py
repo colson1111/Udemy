@@ -18,6 +18,7 @@ x = range(start, stop)
 x
 
 # specify step size as an argument
+start = 5
 x = range(start, stop, 2)
 x
 
