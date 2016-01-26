@@ -39,4 +39,8 @@ for num in xrange(10):
 xrange(0,6,2)
 
 x = xrange(1,6)
+x2 = range(1,6)
 type(x)
+
+# can cast an xrange object into a list
+list(x) == x2
