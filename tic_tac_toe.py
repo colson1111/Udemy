@@ -53,7 +53,7 @@ for i in range(9):
         
         while invalid_move:
             
-            move = input('Player X Go: ')   # Player X enter a new move
+            move = int(raw_input('Player X Go: '))  # Player X enter a new move
             
             if player_quit(move):   # check if player is quitting
                 break
@@ -81,7 +81,7 @@ for i in range(9):
         
         while invalid_move:
             
-            move = input('Player O Go: ')  # player O enter a new move
+            move = int(raw_input('Player O Go: '))  # player O enter a new move
         
             if player_quit(move):
                 break
