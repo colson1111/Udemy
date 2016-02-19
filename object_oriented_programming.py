@@ -36,7 +36,8 @@ class Circle(object):
     # circle gets instantiated with a radius
     def __init__(self, radius = 1):
         self.radius = radius
-    
+        self.circumference = 2 * radius * Circle.pi
+
     # area method to calculate area
     def area(self):
         return self.radius * self.radius * Circle.pi
@@ -53,7 +54,10 @@ class Circle(object):
     def circumference(self):
         return 2 * self.radius * Circle.pi
         
-
+c = Circle(10)
+c.pi
+c.radius
+c.circumference
 
 # INHERITANCE
 class Animal(object):
