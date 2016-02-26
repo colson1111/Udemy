@@ -3,7 +3,7 @@ import numpy as np
 
 
 # Create deck class
-class deck(object):
+class Deck(object):
     
     def __init__(self):
         
@@ -25,7 +25,7 @@ class deck(object):
         print('\n'.join('{}: {}'.format(*k) for k in enumerate(self.deck)))
         
 # Create player class       
-class player(object):
+class Player(object):
     
     def __init__(self):
         self.hand = []
@@ -39,7 +39,7 @@ class player(object):
         return self.bank
         
 # Create dealer class 
-class dealer(object):
+class Dealer(object):
     
     def __init__(self):
         self.hand = []
@@ -127,14 +127,14 @@ def restart():
 # Code
     
 # Introduce game
-player1 = player()
-dealer1 = dealer()
+player1 = Player()
+dealer1 = Dealer()
 
 play = True
 
 while play == True:
     # Create a new deck and shuffle it
-    new_deck = deck()
+    new_deck = Deck()
     new_deck.shuffle()
     
     # Take bet and adjust bank value
