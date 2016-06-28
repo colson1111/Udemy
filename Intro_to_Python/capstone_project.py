@@ -7,6 +7,9 @@ def collatz(num):
     
     steps = 0
     
+    if num <= 0:
+        return steps
+    
     while num <> 1:
         if num % 2 == 0:
             num = num / 2
@@ -18,6 +21,28 @@ def collatz(num):
     
 collatz(123)
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+dictionary = dict()
+
+for i in range(1,1000000):
+    dictionary[i] = collatz(i)
+
+keys = np.array(dictionary.items())
+
+inputs = keys[:,0]
+outputs = keys[:,1]
+plt.scatter(inputs,outputs)
+plt.hist(outputs, 500)
+
+
+
+
+
+
+
+    
 # Sieve of Eratosthenes:  Find all prime numbers in range
 
 def prime_sieve(limit):
